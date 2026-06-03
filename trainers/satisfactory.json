@@ -1,5 +1,6 @@
 {
   "gameId": "satisfactory",
+  "steamAppId": 526870,
   "title": "Satisfactory",
   "processName": "FactoryGameSteam-Win64-Shipping.exe",
   "cheats": [
