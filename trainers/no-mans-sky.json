@@ -1,0 +1,92 @@
+{
+  "gameId": "no-mans-sky",
+  "title": "No Man's Sky",
+  "processName": "NMS.exe",
+  "cheats": [
+    {
+      "name": "Infinite Life Support",
+      "type": "boolean",
+      "defaultHotkey": "F1",
+      "enableValue": [255],
+      "disableValue": [0],
+      "memoryOffsets": [
+        {
+          "address": "0x00000000",
+          "offsets": [0x0, 0x0, 0x0]
+        }
+      ]
+    },
+    {
+      "name": "Infinite Shield",
+      "type": "boolean",
+      "defaultHotkey": "F2",
+      "enableValue": [255],
+      "disableValue": [0],
+      "memoryOffsets": [
+        {
+          "address": "0x00000000",
+          "offsets": [0x0, 0x0, 0x0]
+        }
+      ]
+    },
+    {
+      "name": "Infinite Jetpack Fuel",
+      "type": "boolean",
+      "defaultHotkey": "F3",
+      "enableValue": [255],
+      "disableValue": [0],
+      "memoryOffsets": [
+        {
+          "address": "0x00000000",
+          "offsets": [0x0, 0x0, 0x0]
+        }
+      ]
+    },
+    {
+      "name": "Infinite Hazard Protection",
+      "type": "boolean",
+      "defaultHotkey": "F4",
+      "enableValue": [255],
+      "disableValue": [0],
+      "memoryOffsets": [
+        {
+          "address": "0x00000000",
+          "offsets": [0x0, 0x0, 0x0]
+        }
+      ]
+    },
+    {
+      "name": "Units Amount",
+      "type": "integer",
+      "defaultHotkey": "F5",
+      "memoryOffsets": [
+        {
+          "address": "0x00000000",
+          "offsets": [0x0, 0x0]
+        }
+      ]
+    },
+    {
+      "name": "Nanites Amount",
+      "type": "integer",
+      "defaultHotkey": "F6",
+      "memoryOffsets": [
+        {
+          "address": "0x00000000",
+          "offsets": [0x0, 0x0]
+        }
+      ]
+    },
+    {
+      "name": "Quicksilver Amount",
+      "type": "integer",
+      "defaultHotkey": "F7",
+      "memoryOffsets": [
+        {
+          "address": "0x00000000",
+          "offsets": [0x0, 0x0]
+        }
+      ]
+    }
+  ]
+}
