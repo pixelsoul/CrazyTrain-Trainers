@@ -1,0 +1,42 @@
+name: Build Trainers
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "trainers/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Combine trainer files
+        run: |
+          node -e "
+            const fs = require('fs');
+            const path = require('path');
+            const dir = 'trainers';
+            const files = fs.readdirSync(dir)
+              .filter(f => f.endsWith('.json'))
+              .sort();
+            const trainers = files.flatMap(f => {
+              const content = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
+              return Array.isArray(content) ? content : [content];
+            });
+            fs.mkdirSync('dist', { recursive: true });
+            fs.writeFileSync('dist/trainers.json', JSON.stringify(trainers, null, 2));
+            console.log('Built dist/trainers.json with', trainers.length, 'trainer(s)');
+          "
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dist/trainers.json
+          git diff --cached --quiet || git commit -m "chore: rebuild dist/trainers.json [skip ci]"
+          git push

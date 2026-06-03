@@ -1,0 +1,44 @@
+{
+  "gameId": "example-game",
+  "title": "Example Game",
+  "processName": "example_game.exe",
+  "cheats": [
+    {
+      "name": "Infinite Health",
+      "type": "boolean",
+      "defaultHotkey": "F1",
+      "enableValue": [1],
+      "disableValue": [0],
+      "memoryOffsets": [
+        {
+          "address": "0x1A2B3C4D",
+          "offsets": [0x10, 0x28, 0x80]
+        }
+      ]
+    },
+    {
+      "name": "Infinite Ammo",
+      "type": "boolean",
+      "defaultHotkey": "F2",
+      "enableValue": [1],
+      "disableValue": [0],
+      "memoryOffsets": [
+        {
+          "address": "0x1A2B3C4D",
+          "offsets": [0x10, 0x30, 0x14]
+        }
+      ]
+    },
+    {
+      "name": "Gold Amount",
+      "type": "integer",
+      "defaultHotkey": "F3",
+      "memoryOffsets": [
+        {
+          "address": "0x1A2B3C4D",
+          "offsets": [0x20, 0x50]
+        }
+      ]
+    }
+  ]
+}
