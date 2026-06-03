@@ -1,0 +1,72 @@
+{
+  "gameId": "satisfactory",
+  "title": "Satisfactory",
+  "processName": "FactoryGameSteam-Win64-Shipping.exe",
+  "cheats": [
+    {
+      "name": "God Mode",
+      "type": "boolean",
+      "defaultHotkey": "F1",
+      "enableValue": [1],
+      "disableValue": [0],
+      "memoryOffsets": [
+        {
+          "address": "0x00000000",
+          "offsets": [0, 0, 0]
+        }
+      ]
+    },
+    {
+      "name": "Infinite Jetpack Fuel",
+      "type": "boolean",
+      "defaultHotkey": "F2",
+      "enableValue": [255],
+      "disableValue": [0],
+      "memoryOffsets": [
+        {
+          "address": "0x00000000",
+          "offsets": [0, 0, 0]
+        }
+      ]
+    },
+    {
+      "name": "No Fall Damage",
+      "type": "boolean",
+      "defaultHotkey": "F3",
+      "enableValue": [1],
+      "disableValue": [0],
+      "memoryOffsets": [
+        {
+          "address": "0x00000000",
+          "offsets": [0, 0, 0]
+        }
+      ]
+    },
+    {
+      "name": "Unlimited Power",
+      "type": "boolean",
+      "defaultHotkey": "F4",
+      "enableValue": [1],
+      "disableValue": [0],
+      "memoryOffsets": [
+        {
+          "address": "0x00000000",
+          "offsets": [0, 0, 0]
+        }
+      ]
+    },
+    {
+      "name": "Items Don't Decrease",
+      "type": "boolean",
+      "defaultHotkey": "F5",
+      "enableValue": [1],
+      "disableValue": [0],
+      "memoryOffsets": [
+        {
+          "address": "0x00000000",
+          "offsets": [0, 0, 0]
+        }
+      ]
+    }
+  ]
+}
