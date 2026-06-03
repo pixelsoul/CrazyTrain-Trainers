@@ -1,43 +1,91 @@
 [
   {
-    "gameId": "example-game",
-    "title": "Example Game",
-    "processName": "example_game.exe",
+    "gameId": "no-mans-sky",
+    "title": "No Man's Sky",
+    "processName": "NMS.exe",
     "cheats": [
       {
-        "name": "Infinite Health",
+        "name": "Infinite Life Support",
         "type": "boolean",
         "defaultHotkey": "F1",
-        "enableValue": [1],
+        "enableValue": [255],
         "disableValue": [0],
         "memoryOffsets": [
           {
-            "address": "0x1A2B3C4D",
-            "offsets": [16, 40, 128]
+            "address": "0x00000000",
+            "offsets": [0, 0, 0]
           }
         ]
       },
       {
-        "name": "Infinite Ammo",
+        "name": "Infinite Shield",
         "type": "boolean",
         "defaultHotkey": "F2",
-        "enableValue": [1],
+        "enableValue": [255],
         "disableValue": [0],
         "memoryOffsets": [
           {
-            "address": "0x1A2B3C4D",
-            "offsets": [16, 48, 20]
+            "address": "0x00000000",
+            "offsets": [0, 0, 0]
           }
         ]
       },
       {
-        "name": "Gold Amount",
-        "type": "integer",
+        "name": "Infinite Jetpack Fuel",
+        "type": "boolean",
         "defaultHotkey": "F3",
+        "enableValue": [255],
+        "disableValue": [0],
         "memoryOffsets": [
           {
-            "address": "0x1A2B3C4D",
-            "offsets": [32, 80]
+            "address": "0x00000000",
+            "offsets": [0, 0, 0]
+          }
+        ]
+      },
+      {
+        "name": "Infinite Hazard Protection",
+        "type": "boolean",
+        "defaultHotkey": "F4",
+        "enableValue": [255],
+        "disableValue": [0],
+        "memoryOffsets": [
+          {
+            "address": "0x00000000",
+            "offsets": [0, 0, 0]
+          }
+        ]
+      },
+      {
+        "name": "Units Amount",
+        "type": "integer",
+        "defaultHotkey": "F5",
+        "memoryOffsets": [
+          {
+            "address": "0x00000000",
+            "offsets": [0, 0]
+          }
+        ]
+      },
+      {
+        "name": "Nanites Amount",
+        "type": "integer",
+        "defaultHotkey": "F6",
+        "memoryOffsets": [
+          {
+            "address": "0x00000000",
+            "offsets": [0, 0]
+          }
+        ]
+      },
+      {
+        "name": "Quicksilver Amount",
+        "type": "integer",
+        "defaultHotkey": "F7",
+        "memoryOffsets": [
+          {
+            "address": "0x00000000",
+            "offsets": [0, 0]
           }
         ]
       }
