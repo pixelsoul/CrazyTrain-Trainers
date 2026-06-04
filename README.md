@@ -18,9 +18,9 @@ When your PR is merged into `main`, the `dist/trainers.json` is rebuilt automati
   "gameId": "unique-kebab-case-id",
   "title": "Game Title",
   "processName": "game.exe",
-  "cheats": [
+  "mods": [
     {
-      "name": "Cheat Name",
+      "name": "Mod Name",
       "type": "boolean",
       "defaultHotkey": "F1",
       "enableValue": [1],
@@ -43,12 +43,12 @@ When your PR is merged into `main`, the `dist/trainers.json` is rebuilt automati
 | `gameId`                 | string                     | Unique identifier (kebab-case, matches the app's game list) |
 | `title`                  | string                     | Display name shown in the UI                                |
 | `processName`            | string                     | Exact `.exe` filename the game runs as                      |
-| `cheats[].name`          | string                     | Display name for the cheat                                  |
-| `cheats[].type`          | `"boolean"` \| `"integer"` | Whether this is a toggle or a value                         |
-| `cheats[].defaultHotkey` | string                     | Default key binding (e.g. `"F1"`, `"Numpad0"`)              |
-| `cheats[].enableValue`   | number[]                   | Bytes written when enabled (default `[1]`)                  |
-| `cheats[].disableValue`  | number[]                   | Bytes written when disabled (default `[0]`)                 |
-| `cheats[].memoryOffsets` | array                      | Base address + pointer chain offsets                        |
+| `mods[].name`          | string                     | Display name for the mod                                    |
+| `mods[].type`          | `"boolean"` \| `"integer"` | Whether this is a toggle or a value                         |
+| `mods[].defaultHotkey` | string                     | Default key binding (e.g. `"F1"`, `"Numpad0"`)              |
+| `mods[].enableValue`   | number[]                   | Bytes written when enabled (default `[1]`)                  |
+| `mods[].disableValue`  | number[]                   | Bytes written when disabled (default `[0]`)                 |
+| `mods[].memoryOffsets` | array                      | Base address + pointer chain offsets                        |
 
 ## How Memory Offsets Work
 

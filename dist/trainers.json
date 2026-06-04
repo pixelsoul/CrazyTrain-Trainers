@@ -4,7 +4,7 @@
     "steamAppId": 275850,
     "title": "No Man's Sky",
     "processName": "NMS.exe",
-    "cheats": [
+    "mods": [
       {
         "name": "Infinite Life Support",
         "type": "boolean",
@@ -138,7 +138,7 @@
     "steamAppId": 526870,
     "title": "Satisfactory",
     "processName": "FactoryGameSteam-Win64-Shipping.exe",
-    "cheats": [
+    "mods": [
       {
         "name": "God Mode",
         "type": "boolean",

@@ -3,7 +3,7 @@
   "steamAppId": 275850,
   "title": "No Man's Sky",
   "processName": "NMS.exe",
-  "cheats": [
+  "mods": [
     {
       "name": "Infinite Life Support",
       "type": "boolean",
@@ -12,8 +12,9 @@
       "disableValue": [0],
       "memoryOffsets": [
         {
+          "module": "NMS.exe",
           "address": "0x00000000",
-          "offsets": [0, 0, 0]
+          "offsets": []
         }
       ]
     },
@@ -25,8 +26,9 @@
       "disableValue": [0],
       "memoryOffsets": [
         {
+          "module": "NMS.exe",
           "address": "0x00000000",
-          "offsets": [0, 0, 0]
+          "offsets": []
         }
       ]
     },
@@ -38,8 +40,9 @@
       "disableValue": [0],
       "memoryOffsets": [
         {
+          "module": "NMS.exe",
           "address": "0x00000000",
-          "offsets": [0, 0, 0]
+          "offsets": []
         }
       ]
     },
@@ -51,8 +54,9 @@
       "disableValue": [0],
       "memoryOffsets": [
         {
+          "module": "NMS.exe",
           "address": "0x00000000",
-          "offsets": [0, 0, 0]
+          "offsets": []
         }
       ]
     },
@@ -60,10 +64,13 @@
       "name": "Units Amount",
       "type": "integer",
       "defaultHotkey": "F5",
+      "enableValue": [255, 201, 154, 59],
+      "disableValue": [0, 0, 0, 0],
       "memoryOffsets": [
         {
+          "module": "NMS.exe",
           "address": "0x00000000",
-          "offsets": [0, 0]
+          "offsets": []
         }
       ]
     },
@@ -71,10 +78,13 @@
       "name": "Nanites Amount",
       "type": "integer",
       "defaultHotkey": "F6",
+      "enableValue": [255, 201, 154, 59],
+      "disableValue": [0, 0, 0, 0],
       "memoryOffsets": [
         {
+          "module": "NMS.exe",
           "address": "0x00000000",
-          "offsets": [0, 0]
+          "offsets": []
         }
       ]
     },
@@ -82,10 +92,13 @@
       "name": "Quicksilver Amount",
       "type": "integer",
       "defaultHotkey": "F7",
+      "enableValue": [255, 201, 154, 59],
+      "disableValue": [0, 0, 0, 0],
       "memoryOffsets": [
         {
+          "module": "NMS.exe",
           "address": "0x00000000",
-          "offsets": [0, 0]
+          "offsets": []
         }
       ]
     }
