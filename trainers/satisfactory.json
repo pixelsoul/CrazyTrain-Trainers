@@ -5,72 +5,602 @@
   "processName": "FactoryGameSteam-Win64-Shipping.exe",
   "mods": [
     {
-      "name": "God Mode",
+      "name": "Freeze time of day",
       "type": "boolean",
       "defaultHotkey": "F1",
-      "enableValue": [1],
-      "disableValue": [0],
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
       "memoryOffsets": [
         {
-          "module": "FactoryGameSteam-Win64-Shipping.exe",
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
           "address": "0x00000000",
-          "offsets": []
+          "offsets": [],
+          "aobSignature": "F3 0F 11 83 2C 03 00 00 F3",
+          "aobOffset": 0
         }
       ]
     },
     {
-      "name": "Infinite Jetpack Fuel",
+      "name": "Fast crafting",
       "type": "boolean",
       "defaultHotkey": "F2",
-      "enableValue": [255],
-      "disableValue": [0],
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
       "memoryOffsets": [
         {
-          "module": "FactoryGameSteam-Win64-Shipping.exe",
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
           "address": "0x00000000",
-          "offsets": []
+          "offsets": [],
+          "aobSignature": "F3 0F 11 91 2C 03 00 00",
+          "aobOffset": 0
         }
       ]
     },
     {
-      "name": "No Fall Damage",
+      "name": "Fly",
       "type": "boolean",
       "defaultHotkey": "F3",
-      "enableValue": [1],
-      "disableValue": [0],
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
       "memoryOffsets": [
         {
-          "module": "FactoryGameSteam-Win64-Shipping.exe",
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
           "address": "0x00000000",
-          "offsets": []
+          "offsets": [],
+          "aobSignature": "80 B9 11 02 00 00 01 48",
+          "aobOffset": 0
         }
       ]
     },
     {
-      "name": "Unlimited Power",
+      "name": "Super speed",
       "type": "boolean",
       "defaultHotkey": "F4",
-      "enableValue": [1],
-      "disableValue": [0],
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
       "memoryOffsets": [
         {
-          "module": "FactoryGameSteam-Win64-Shipping.exe",
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
           "address": "0x00000000",
-          "offsets": []
+          "offsets": [],
+          "aobSignature": "80 BB 76 0F 00 00 00 74 1C",
+          "aobOffset": 0
         }
       ]
     },
     {
-      "name": "Items Don't Decrease",
+      "name": "Super jump",
       "type": "boolean",
       "defaultHotkey": "F5",
-      "enableValue": [1],
-      "disableValue": [0],
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
       "memoryOffsets": [
         {
-          "module": "FactoryGameSteam-Win64-Shipping.exe",
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
           "address": "0x00000000",
-          "offsets": []
+          "offsets": [],
+          "aobSignature": "F3 0F 5A C6 0F 28 74 24 20",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "Infinite jumps",
+      "type": "boolean",
+      "defaultHotkey": "F6",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "39 83 F4 04 00 00",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "Health / Kill",
+      "type": "boolean",
+      "defaultHotkey": "F7",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "F3 0F 5C CE 48 8D 8E 28 01 00 00",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "Player Inventory 198 Slots",
+      "type": "boolean",
+      "defaultHotkey": "F8",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "55 56 41 56 48 83 EC 30 48 8B F1",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "Set storage slots x200",
+      "type": "boolean",
+      "defaultHotkey": "F9",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "89 91 78 01 00 00 44",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "Conveyor Speed",
+      "type": "boolean",
+      "defaultHotkey": "F10",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "8B 80 1C 06 00 00",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "Fluid Storage 1M",
+      "type": "boolean",
+      "defaultHotkey": "F11",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "5E FC FF 48 8D B7 18 08 00 00",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "Unlimited wire connection",
+      "type": "boolean",
+      "defaultHotkey": "F12",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "0F B6 81 00 03 00 00 C3",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "Resource extractor x10",
+      "type": "boolean",
+      "defaultHotkey": "F1",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "3B C6 49 8B AF F8 07 00 00",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "Production x10",
+      "type": "boolean",
+      "defaultHotkey": "F2",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "66 42 0F 6E 74 28 08",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "Somersloop x100 - low power",
+      "type": "boolean",
+      "defaultHotkey": "F3",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "F3 0F 10 8B 28 06 00 00 0F 28 F0 F3 0F 10 83 44 07 00 00 E8 D4",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "All Node is pure",
+      "type": "boolean",
+      "defaultHotkey": "F4",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "48 8B D9 FF 15 71 03 21 00",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "Better pipe + pressure",
+      "type": "boolean",
+      "defaultHotkey": "F5",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "0F 29 70 E8 0F 29 78 D8 44 0F 29 40 C8 44 0F 29 48 B8 44 0F 29 50 A8 44 0F 29 60",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "Better Jetpack (Fuel/Thrust)",
+      "type": "boolean",
+      "defaultHotkey": "F6",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "40 53 48 83 EC 20 48 63 81 9C 05 00 00",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "Better Hoverpack (Energy/Speed)",
+      "type": "boolean",
+      "defaultHotkey": "F7",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "F3 0F 10 8B A0 05 00 00",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "Max Zoop",
+      "type": "boolean",
+      "defaultHotkey": "F8",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "44 0F 4C 1F 41 3B D3",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "Low power consumption",
+      "type": "boolean",
+      "defaultHotkey": "F9",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "0F 57 C0 0F 2F 81 20 06 00 00 73 08",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "No reload weapons",
+      "type": "boolean",
+      "defaultHotkey": "F10",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "FF 89 68 05 00 00",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "No milestone cost",
+      "type": "boolean",
+      "defaultHotkey": "F11",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "48 63 9F 90 00 00 00",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "No resource consumption",
+      "type": "boolean",
+      "defaultHotkey": "F12",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "44 29 6C 39 28",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "Max stack",
+      "type": "boolean",
+      "defaultHotkey": "F1",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "8B 80 94 01 00 00",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "Max stack in new stack",
+      "type": "boolean",
+      "defaultHotkey": "F2",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "8B 44 24 70 48 8D 54 24 58 3B",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "Duplicate items [Drag & Drop]",
+      "type": "boolean",
+      "defaultHotkey": "F3",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "41 2B C7 42 89 44 31 28",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "Quick analysis and ship",
+      "type": "boolean",
+      "defaultHotkey": "F4",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "F3 0F 10 83 98 00 00 00",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "Dimensional storage (\"TESTING - Max stack, Min 5\")",
+      "type": "boolean",
+      "defaultHotkey": "F5",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "0F AF 85 90 03 00 00 44",
+          "aobOffset": 0
+        }
+      ]
+    },
+    {
+      "name": "Inventory (Active and open inventory)",
+      "type": "boolean",
+      "defaultHotkey": "F6",
+      "enableValue": [
+        1
+      ],
+      "disableValue": [
+        0
+      ],
+      "memoryOffsets": [
+        {
+          "module": "FactoryGameSteam-FactoryGame-Win64-Shipping.dll",
+          "address": "0x00000000",
+          "offsets": [],
+          "aobSignature": "0F 1F 44 00 00 48 8B BB",
+          "aobOffset": 0
         }
       ]
     }
